@@ -8,10 +8,10 @@
 
 | IP | Servername | Services |
 |---|---|---|
-| 172.20.208.2 | srvicingaweb01 | Icingaweb2 + DB |
-| 172.20.208.3 | srvgrafana01 | Grafana + InfluxDB2 |
-| 172.20.208.4 | srvicinga01 | Icinga Master 1 |
-| 172.20.208.5 | srvicinga02 | Icinga Master 2 |
+| 10.20.208.2 | srvicingaweb01 | Icingaweb2 + DB |
+| 10.20.208.3 | srvgrafana01 | Grafana + InfluxDB2 |
+| 10.20.208.4 | srvicinga01 | Icinga Master 1 |
+| 10.20.208.5 | srvicinga02 | Icinga Master 2 |
 
 ## Install Icinga2 HA Cluster
 ### Add sources:
