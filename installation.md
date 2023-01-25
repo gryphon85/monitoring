@@ -14,7 +14,7 @@
 | 10.20.208.5 | srvicinga02 | Icinga Master 2 |
 
 ## Install Icinga2 HA Cluster
-### Add sources:
+### Add sources
 ```bash
 ```
 ### Install Icinga2
@@ -25,6 +25,15 @@
 ```
 ### HA Setup
 
-## Install icingaweb02 Server
-### Install mysql-Server
-### Install icingaweb02
+## Install Icingaweb02 Server
+### Install mySQL-Server
+### Install Icingaweb02
+### Install Director
+
+## Install Grafana and InfluxDB2
+### Add sources
+### Install Grafana
+### Configure Grafana
+### Install InfluxDB2
+### Configure InfluxDB2Writer
+### Add Data Source
