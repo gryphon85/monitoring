@@ -1,4 +1,4 @@
-# Icinga2
+# Installation of Icinga2 HA Cluster, IDO-Database, Icingaweb2 with Icinga Director and Grafana with InfluxDB2
 ## Overview:
 - Installation of Icinga2 HA Cluster
 - Installation of mySQL-Server and Icingaweb2
