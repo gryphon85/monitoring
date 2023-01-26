@@ -50,6 +50,8 @@ add the API user ```root``` with an auto-generated password in the configuration
 icinga2 api setup
 ```
 ### HA Setup
+Link: https://icinga.com/blog/2020/10/01/how-to-set-up-high-availability-masters/
+Mpre: https://icinga.com/docs/icinga-2/latest/doc/06-distributed-monitoring/
 
 ## Install Icingaweb02 Server
 ### Install mySQL-Server
