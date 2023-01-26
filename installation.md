@@ -14,14 +14,40 @@
 | 10.20.208.5 | srvicinga02 | Icinga Master 2 |
 
 ## Install Icinga2 HA Cluster
+Source: https://icinga.com/docs/icinga-2/latest/doc/02-installation/02-Ubuntu/
 ### Add sources
 ```bash
+apt-get update
+apt-get -y install apt-transport-https wget gnupg
+
+wget -O - https://packages.icinga.com/icinga.key | apt-key add -
+
+. /etc/os-release; if [ ! -z ${UBUNTU_CODENAME+x} ]; then DIST="${UBUNTU_CODENAME}"; else DIST="$(lsb_release -c| awk '{print $2}')"; fi; \
+ echo "deb https://packages.icinga.com/ubuntu icinga-${DIST} main" > \
+ /etc/apt/sources.list.d/${DIST}-icinga.list
+ echo "deb-src https://packages.icinga.com/ubuntu icinga-${DIST} main" >> \
+ /etc/apt/sources.list.d/${DIST}-icinga.list
+
+apt-get update
 ```
 ### Install Icinga2
 ```bash
+apt-get install icinga2
 ```
-### Configure API
+
+### Install Check Plugins
 ```bash
+apt-get install monitoring-plugins
+```
+
+### Configure API
+Run the following command to:
+* enable the ```api``` feature,
+* set up certificates, and
+add the API user ```root``` with an auto-generated password in the configuration file ```/etc/icinga2/conf.d/api-users.conf```
+* add
+```bash
+icinga2 api setup
 ```
 ### HA Setup
 
