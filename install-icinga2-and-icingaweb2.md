@@ -1,7 +1,7 @@
 # Installation of Icinga2 HA Cluster, IDO-Database, Icingaweb2 with Icinga Director and Grafana with InfluxDB2
 ## Overview:
 - Installation of Icinga2 HA Cluster
-- Installation of mySQL-Server and Icingaweb2
+- Installation of MySQL-Server and Icingaweb2
 - Installation of Icinga Director
 - Installation of InfluxDB2 and Grafana
 ## Server
@@ -53,15 +53,9 @@ icinga2 api setup
 * https://icinga.com/blog/2020/10/01/how-to-set-up-high-availability-masters/
 * https://icinga.com/docs/icinga-2/latest/doc/06-distributed-monitoring/
 
-## Install Icingaweb02 Server
-### Install mySQL-Server
-### Install Icingaweb02
+## Install Icingaweb2 Server
+### Install MySQL-Server
+### Install Icingaweb2
+### Configure Icingaweb2
 ### Install Director
-
-## Install Grafana and InfluxDB2
-### Add sources
-### Install Grafana
-### Configure Grafana
-### Install InfluxDB2
-### Configure InfluxDB2Writer
-### Add Data Source
+### Configure Director
