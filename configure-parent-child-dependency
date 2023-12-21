@@ -1,0 +1,16 @@
+# Configure Parent Child Dependency in Icinga Director
+
+#parent #child #dependency #icinga #director
+
+Create Data Field "parent"
+  Caption "Parent"
+  Data type "DirectorObject"
+  Object "Hosts"
+  Target data type "Array"
+
+Create Host Template "Standard Child Host"
+  Add Field "Parent"
+
+Create Dependency Apply Rule "parent-child"
+  Apply to "Hosts"
+  Parent Host "$host.vars.parent$"  
